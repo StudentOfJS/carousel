@@ -1,0 +1,56 @@
+// Required Core Stylesheet
+@import '~@glidejs/glide/src/assets/sass/glide.core';
+
+// Optional Theme Stylesheet
+@import '~@glidejs/glide/src/assets/sass/glide.theme';
+
+.wc-carousel {
+  max-width: 600px;
+  margin: auto;
+  padding: auto;
+  position: relative;
+  width: 100%;
+}
+
+.wc-carousel-nav {
+  background: transparent;
+  height: 100%;
+  position: absolute;
+  top: calc(50% - (2em + 12px));
+  width: 100%;
+  z-index: 10;
+  &__controls {
+    background: hsla(0, 100%, 100%, 0.4);
+    box-shadow: none;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0 0.2em;
+    padding: 2em;
+    svg {
+      fill: rgb(35, 64, 100);
+    }
+    &:hover {
+      background: rgba(35, 64, 100, 0.3);
+      svg {
+        fill: hsla(0, 100%, 100%, 1);
+      }
+    }
+    &:active,
+    &:focus,
+    &:focus-within {
+      background: rgba(35, 64, 100, 0.8);
+      outline: none;
+      svg {
+        fill: hsla(0, 100%, 100%, 1);
+      }
+    }
+    &--prev {
+      float: left;
+    }
+
+    &--next {
+      float: right;
+    }
+  }
+}
