@@ -1,6 +1,5 @@
 import Glide, {
   Controls,
-  Breakpoints,
   Keyboard,
   Images,
   Swipe,
@@ -12,4 +11,4 @@ new Glide('.glide', {
   perView: 1,
   perTouch: 3,
   gap: 0,
-}).mount({ Controls, Breakpoints, Keyboard, Images, Swipe });
+}).mount({ Controls, Keyboard, Images, Swipe });
